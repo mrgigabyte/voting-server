@@ -1,0 +1,38 @@
+{
+  "name": "voting-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "mocha --compilers js:@babel/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\"",
+    "test:watch": "npm run test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/register": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.2.0",
+    "chai-immutable": "^2.0.0-rc.3",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "immutable": "^3.0.0",
+    "redux": "^4.0.1",
+    "socket.io": "^2.2.0"
+  }
+}
